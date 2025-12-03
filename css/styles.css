@@ -1,0 +1,96 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f; /* พื้นหลังสีม่วงแดง ตามโจทย์ */
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319; /* สีเหลือง */
+  border-radius: 0;
+  border: 0;
+}
+
+/* ชื่อร้าน Food, LLC */
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* ชื่อร้าน */
+  font-family: 'Lora', serif;
+  color: #557c3e; /* สีเขียว */
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+/* เมนู Dropdown (Mobile) */
+.navbar-collapse {
+  border-top: 0;
+}
+#nav-list {
+  background-color: #fceea7; /* สีพื้นหลังเมนูตอนกางออกมา */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#nav-list a {
+  color: #557c3e;
+  text-align: center;
+  font-size: 1.2em;
+}
+#nav-list a:hover {
+  background: #e7e7e7;
+}
+#nav-list hr {
+  display: none;
+}
+
+/* ปุ่ม Hamburger Menu */
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+/** MAIN CONTENT **/
+h2 {
+  margin-bottom: 50px;
+  color: #000; /* หัวข้อ Our Menu สีดำ */
+  font-weight: bold;
+}
+
+/* กล่องเนื้อหา */
+.menu-item-tile {
+  background-color: #999; /* สีเทา */
+  border: 2px solid #000;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  color: #000;
+}
+.menu-item-tile h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.menu-item-tile a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ถ้าหน้าจอเล็กกว่า 767px (Mobile) ให้จัดข้อความให้ชิดซ้าย */
+@media (max-width: 767px) {
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw; /* ปรับขนาดตัวอักษรตามหน้าจอ */
+  }
+}
